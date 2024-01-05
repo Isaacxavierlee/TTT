@@ -25,7 +25,8 @@
 /* Adjust h1 font size for smaller screens */
 @media (max-width: 600px) {
   .title {
-    font-size: 15px;
+    font-size: 24px; /* Increase font size for better visibility */
+    margin-top: 20px; /* Add more top margin for better spacing */
   }
 }
 
@@ -37,14 +38,15 @@
   max-width: 300px;
 }
 
+/* Adjust tile styles for better visibility and spacing on small screens */
 .tile {
   border: 2px solid white;
-  min-width: 100px;
-  min-height: 100px;
+  min-width: 60px; /* Decrease width for better spacing */
+  min-height: 60px; /* Decrease height for better spacing */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
+  font-size: 30px; /* Decrease font size for better visibility */
   cursor: pointer;
   border-radius: 10px;
   transition: background-color 0.3s, transform 0.3s;
@@ -67,7 +69,7 @@
 
 .display {
   color: white;
-  font-size: 25px;
+  font-size: 18px; /* Decrease font size for better visibility */
   text-align: center;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -85,12 +87,13 @@
   margin-top: 1em;
 }
 
+/* Adjust button styles for better spacing on small screens */
 .controls button {
   color: white;
-  padding: 8px;
+  padding: 10px; /* Increase padding for better touchability */
   border-radius: 8px;
   border: none;
-  font-size: 20px;
+  font-size: 16px; /* Decrease font size for better visibility */
   margin-top: 1em;
   cursor: pointer;
   background-color: #e74c3c;
