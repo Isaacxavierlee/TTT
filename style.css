@@ -22,29 +22,11 @@
   margin-top: 10px;
 }
 
-/* Add media query for larger screens */
-@media (min-width: 600px) {
-  .container {
-    max-width: 600px;
+/* Adjust h1 font size for smaller screens */
+@media (max-width: 600px) {
+  .title {
+    font-size: 15px;
   }
-
-  .tile {
-    min-width: 150px;
-    min-height: 150px;
-    font-size: 80px;
-  }
-}
-
-.display {
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-.hide {
-  display: none;
 }
 
 .container {
@@ -67,30 +49,37 @@
   border-radius: 10px;
   transition: background-color 0.3s, transform 0.3s;
   background-color: #a6b2b9;
-  /* Blue color, adjust as needed */
   color: white;
-  /* Text color */
 }
 
 .tile:hover {
   background-color: #2980b9;
-  /* Darker blue on hover, adjust as needed */
   transform: scale(1.1);
 }
 
 .playerX {
   color: #66ffa6;
-  /* Green color for X */
 }
 
 .playerO {
   color: #c479ec;
-  /* Blue color for O */
+}
+
+.display {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
 }
 
 .controls {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1em;
@@ -102,16 +91,14 @@
   border-radius: 8px;
   border: none;
   font-size: 20px;
-  margin-left: 1em;
+  margin-top: 1em;
   cursor: pointer;
   background-color: #e74c3c;
-  /* Red color for buttons, adjust as needed */
   transition: background-color 0.3s;
 }
 
 .controls button:hover {
   background-color: #c0392b;
-  /* Darker red on hover, adjust as needed */
 }
 
 .winning-tile {
@@ -121,30 +108,24 @@
   font-weight: bold;
 }
 
-/* Existing styles ... */
+/* Media Query for Larger Screens */
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
 
-.controls button {
-  color: white;
-  padding: 8px;
-  border-radius: 8px;
-  border: none;
-  font-size: 20px;
-  margin-left: 1em;
-  cursor: pointer;
-  background-color: #e74c3c;
-  transition: background-color 0.3s;
+  .tile {
+    min-width: 150px;
+    min-height: 150px;
+    font-size: 80px;
+  }
+
+  .controls {
+    flex-direction: row;
+  }
+
+  .controls button {
+    margin-top: 0;
+    margin-left: 1em;
+  }
 }
-
-.controls button:hover {
-  background-color: #c0392b;
-}
-
-#theme-toggle:hover {
-  background-color: #4A90E2;
-}
-
-#reset:hover {
-  background-color: #4be2c4;
-}
-
-/* Rest of the existing styles ... */
