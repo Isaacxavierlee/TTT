@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Itim', cursive;
+  box-sizing: border-box;
+}
+
+.background {
+  background: linear-gradient(45deg, #000, #8a2be2, #000080);
+  height: 100vh;
+  padding-top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+/* Add media query for larger screens */
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+  }
+
+  .tile {
+    min-width: 150px;
+    min-height: 150px;
+    font-size: 80px;
+  }
+}
+
+.display {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 300px;
+}
+
+.tile {
+  border: 2px solid white;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+  background-color: #a6b2b9;
+  /* Blue color, adjust as needed */
+  color: white;
+  /* Text color */
+}
+
+.tile:hover {
+  background-color: #2980b9;
+  /* Darker blue on hover, adjust as needed */
+  transform: scale(1.1);
+}
+
+.playerX {
+  color: #66ffa6;
+  /* Green color for X */
+}
+
+.playerO {
+  color: #c479ec;
+  /* Blue color for O */
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.controls button {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+  background-color: #e74c3c;
+  /* Red color for buttons, adjust as needed */
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #c0392b;
+  /* Darker red on hover, adjust as needed */
+}
+
+.winning-tile {
+  background-color: #ffd700;
+  border: 2px solid #ff5733;
+  color: #12181B;
+  font-weight: bold;
+}
+
+/* Existing styles ... */
+
+.controls button {
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  font-size: 20px;
+  margin-left: 1em;
+  cursor: pointer;
+  background-color: #e74c3c;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #c0392b;
+}
+
+#theme-toggle:hover {
+  background-color: #4A90E2;
+}
+
+#reset:hover {
+  background-color: #4be2c4;
+}
+
+/* Rest of the existing styles ... */
